@@ -1,0 +1,10 @@
+-xc++
+-std=c++17
+-I
+googletest/googletest
+-I
+googletest/googletest/include
+-I
+googletest/googlemock
+-I
+googletest/googlemock/include
