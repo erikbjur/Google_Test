@@ -4,9 +4,37 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
-            "type": "shell",
-            "command": "echo Hello"
-        }
+			"type": "shell",
+			"label": "Compile Google Test",
+			"command": "clang++",
+			"args": [
+				"-std=c++17",
+				"-m32",
+				"-Wall",
+                "-Wextra",
+                "-Werror",
+                "-O3",
+                "-pthread",
+                "-c",
+
+                "${workspaceFolder}/googletest/googletest/src/gtest-all.cc",
+                "${workspaceFolder}/googletest/googletest/src/gtest_main.cc",
+                "${workspaceFolder}/googletest/googlemock/src/gmock-all.cc",
+                "${workspaceFolder}/googletest/googlemock/src/gmock_main.cc",
+
+                "-I",
+                "${workspaceFolder}/googletest/googletest",
+                "-I",
+                "${workspaceFolder}/googletest/googletest/include",
+                "-I",
+                "${workspaceFolder}/googletest/googlemock",
+                "-I",
+                "${workspaceFolder}/googletest/googlemock/include",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/build/temp"
+			},
+			"group": "build"
+		}
     ]
 }
