@@ -35,6 +35,62 @@
 				"cwd": "${workspaceFolder}/build/temp"
 			},
 			"group": "build"
+		},
+        {
+			"type": "shell",
+			"label": "Link GMock_Main.lib",
+			"command": "llvm-ar",
+			"args": [
+				"rc",
+                "${workspaceFolder}/build/Win32/gmock_main.lib",
+                "${workspaceFolder}/build/temp/gmock_main.o",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "build"
+		},
+        {
+			"type": "shell",
+			"label": "Link GMock-All.lib",
+			"command": "llvm-ar",
+			"args": [
+				"rc",
+                "${workspaceFolder}/build/Win32/gmock-all.lib",
+                "${workspaceFolder}/build/temp/gmock-all.o",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "build"
+		},
+        {
+			"type": "shell",
+			"label": "Link GTest_Main.lib",
+			"command": "llvm-ar",
+			"args": [
+				"rc",
+                "${workspaceFolder}/build/Win32/gtest_main.lib",
+                "${workspaceFolder}/build/temp/gtest_main.o",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "build"
+		},
+        {
+			"type": "shell",
+			"label": "Link GTest-All.lib",
+			"command": "llvm-ar",
+			"args": [
+				"rc",
+                "${workspaceFolder}/build/Win32/gtest-all.lib",
+                "${workspaceFolder}/build/temp/gtest-all.o",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "build"
 		}
     ]
 }
