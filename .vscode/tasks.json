@@ -56,7 +56,7 @@
 			"command": "llvm-ar",
 			"args": [
 				"rc",
-                "${workspaceFolder}/build/Win32/gmock-all.lib",
+                "${workspaceFolder}/build/Win32/gmock.lib",
                 "${workspaceFolder}/build/temp/gmock-all.o",
 			],
 			"options": {
@@ -84,7 +84,7 @@
 			"command": "llvm-ar",
 			"args": [
 				"rc",
-                "${workspaceFolder}/build/Win32/gtest-all.lib",
+                "${workspaceFolder}/build/Win32/gtest.lib",
                 "${workspaceFolder}/build/temp/gtest-all.o",
 			],
 			"options": {
