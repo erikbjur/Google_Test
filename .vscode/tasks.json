@@ -6,7 +6,7 @@
         {
 			"type": "shell",
 			"label": "Compile Google Test",
-			"command": "clang++",
+			"command": "C:/Program Files/LLVM/bin/clang++.exe",
 			"args": [
 				"-std=c++17",
 				"-m32",
@@ -39,7 +39,7 @@
         {
 			"type": "shell",
 			"label": "Link GMock_Main.lib",
-			"command": "llvm-ar",
+			"command": "C:/Program Files/LLVM/bin/llvm-ar.exe",
 			"args": [
 				"rc",
                 "${workspaceFolder}/build/Win32/gmock_main.lib",
@@ -53,7 +53,7 @@
         {
 			"type": "shell",
 			"label": "Link GMock-All.lib",
-			"command": "llvm-ar",
+			"command": "C:/Program Files/LLVM/bin/llvm-ar.exe",
 			"args": [
 				"rc",
                 "${workspaceFolder}/build/Win32/gmock.lib",
@@ -67,7 +67,7 @@
         {
 			"type": "shell",
 			"label": "Link GTest_Main.lib",
-			"command": "llvm-ar",
+			"command": "C:/Program Files/LLVM/bin/llvm-ar.exe",
 			"args": [
 				"rc",
                 "${workspaceFolder}/build/Win32/gtest_main.lib",
@@ -81,7 +81,7 @@
         {
 			"type": "shell",
 			"label": "Link GTest-All.lib",
-			"command": "llvm-ar",
+			"command": "C:/Program Files/LLVM/bin/llvm-ar.exe",
 			"args": [
 				"rc",
                 "${workspaceFolder}/build/Win32/gtest.lib",
